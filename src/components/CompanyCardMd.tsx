@@ -53,9 +53,11 @@ const CompanyCardMd = ({ company }: any) => {
 
           {/* Services */}
           <div className="flex items-center gap-2 mt-3">
-            {services.map((service: string, index: number) => (
-              <Tag key={index} value={service} />
-            ))}
+            {services &&
+              services.length > 0 &&
+              services.map((service: string, index: number) => (
+                <Tag key={index} value={service} />
+              ))}
           </div>
 
           {/* View More Button */}

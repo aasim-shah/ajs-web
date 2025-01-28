@@ -64,10 +64,14 @@ const CompanyCardSm = ({ company }: any) => {
 
           {/* Services */}
           <div className="flex items-center gap-2 mt-2">
-            {services.slice(0, 2).map((service: string, index: number) => (
-              <Tag key={index} value={service} />
-            ))}
-            {services.length > 2 && (
+            {services &&
+              services.length > 0 &&
+              services
+                .slice(0, 2)
+                .map((service: string, index: number) => (
+                  <Tag key={index} value={service} />
+                ))}
+            {services && services.length > 2 && (
               <span className="text-xs text-gray-500">
                 + {services.length - 2} more
               </span>
