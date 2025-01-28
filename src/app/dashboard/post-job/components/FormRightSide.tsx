@@ -62,9 +62,7 @@ const FormRightSide: React.FC<FormRightSideProps> = ({
   setFormData,
 }) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedBenefits, setSelectedBenefits] = useState<Benefit[]>(
-    formData.benefits
-  );
+  const [selectedBenefits, setSelectedBenefits] = useState(formData.benefits);
 
   useEffect(() => {
     // Update the formData.benefits string whenever selectedBenefits changes

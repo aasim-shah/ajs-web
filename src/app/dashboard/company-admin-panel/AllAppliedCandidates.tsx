@@ -95,7 +95,7 @@ const AllCompaniesData = () => {
 
   useEffect(() => {
     if (token && companyId) {
-      dispatch(fetchAllApplications({ companyId, token, page }));
+      dispatch(fetchAllApplications({ companyId, token, page, status }));
     }
   }, [dispatch, token, companyId, page]);
 
