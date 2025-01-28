@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --signature: 214 100% 51%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 248.57 100% 97.25%;
+    --muted-light: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --custom-dark-blue: 215 34% 27%; /* HSL for #25324B */
+    --custom-gray-blue: 217 8% 55%; /* HSL for #7C8493 */
+
+    --paragraphBlue: 214 48% 38%; /* HSL for #3D589B */
+    --suggestion: 215 8% 32%; /* HSL for #474C54 */
+
+    --blue: 214.8 100% 50.2%; /* HSL for #0772FF */
+    --darkGrey: 221.1 31.4% 19.5%; /* HSL for #202A4F */
+    --lightgrey: 219.2 42.9% 30.4%; /* HSL for #2C3863 */
+    --darkBlue: 215 89.5% 15.9%; /* HSL for #060E29 */
+    --offWhite: 210 10% 70%; /* HSL for #B6B6B6 */
+    --offWhiteLight: 210 20% 82.4%; /* HSL for #D2D2D2 */
+    --lightPink: 259.1 100% 96.3%; /* HSL for #F3F1FF */
+    --inputGrey: 216 9.5% 59.2%; /* HSL for #9199A3 */
+    --newGrey: 210 20% 80.1%; /* HSL for #B7C3D2 */
+    --lightWhite: 210 15% 98%; /* HSL for #FAFAFA */
+    --blackish: 214.2 11.7% 10.6%; /* HSL for #18191C */
+    --darktext: 220.4 9.7% 40.2%; /* HSL for #5E6670 */
+    --signingrey: 218.3 7.4% 57.1%; /* HSL for #8F9197 */
+    --signinemail: 220.2 11.2% 18.8%; /* HSL for #202430 */
+    --signininput: 217.8 18.8% 32.9%; /* HSL for #515B6F */
+    --signininput2: 217.2 9.4% 52%; /* HSL for #7C8493 */
+    --signininput3: 215.8 11.5% 68%; /* HSL for #A8ADB7 */
+    --signininput4: 217.2 9.4% 52%; /* HSL for #7C8493 */
+    --modaltext: 215.7 34% 29.4%; /* HSL for #25324B */
+    --greenprogress: 151 51.7% 63.7%; /* HSL for #56CDAD */
+    --greenprogressbg: 150 73.5% 95.9%; /* HSL for #EEFAF7 */
+    --switchbg: 151 51.7% 63.7% / 10%; /* HSL for #56CDAD1A */
+    --bglite: 235.7 53.1% 96.7%; /* HSL for #F8F8FD */
+    --reviewYellow: 42.4 100% 60.7%; /* HSL for #FFB836 */
+    --processingPurple: 243.8 64.5% 49.6%; /* HSL for #4640DE */
+    --hrline: 213.1 32.3% 87.1%; /* HSL for #D6DDEB */
+    --yellow: 42.4 100% 60.7%; /* HSL for #FFB836 */
+    --yellowBg: 42.4 100% 59.4% / 10%; /* HSL for #EB85331A */
+    --discordbg: 236.2 82.8% 66.1%; /* HSL for #5865F2 */
+    --threeicons: 0 0% 78.4%; /* HSL for #C8C8C8 */
+    --gray-300: 210 16% 83%;
+  }
+
+  .dark {
+    --signature: 214 100% 51%;
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-light: 210 20% 12%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+
+    --radius: 0.5rem;
+
+    --custom-dark-blue: 0, 0%, 100%; /* White */
+    --custom-gray-blue: 0, 0%, 100%; /* White */
+
+    --paragraphBlue: 214 48% 90%; /* HSL for dark mode version */
+
+    --blue: 214.8 100% 75%; /* Lightened blue for dark mode */
+    --darkGrey: 0, 0%, 85%; /* Lightened grey for dark mode */
+    --lightgrey: 0, 0%, 75%; /* Lightened light grey for dark mode */
+    --darkBlue: 0, 0%, 95%; /* Lightened dark blue for dark mode */
+    --offWhite: 0, 0%, 20%; /* Darkened off-white for dark mode */
+    --offWhiteLight: 0, 0%, 25%; /* Darkened off-white light for dark mode */
+    --lightPink: 0, 0%, 98%; /* Slightly darker light pink for dark mode */
+    --inputGrey: 0, 0%, 40%; /* Darkened input grey for dark mode */
+    --newGrey: 0, 0%, 50%; /* Darkened new grey for dark mode */
+    --lightWhite: 0, 0%, 10%; /* Darkened light white for dark mode */
+    --blackish: 0, 0%, 95%; /* Lightened blackish for dark mode */
+    --darktext: 0, 0%, 90%; /* Lightened dark text for dark mode */
+    --signingrey: 0, 0%, 50%; /* Darkened signingrey for dark mode */
+    --signinemail: 0, 0%, 95%; /* Lightened signinemail for dark mode */
+    --signininput: 0, 0%, 80%; /* Lightened signininput for dark mode */
+    --signininput2: 0, 0%, 60%; /* Lightened signininput2 for dark mode */
+    --signininput3: 0, 0%, 75%; /* Lightened signininput3 for dark mode */
+    --signininput4: 0, 0%, 60%; /* Lightened signininput4 for dark mode */
+    --modaltext: 0, 0%, 95%; /* Lightened modaltext for dark mode */
+    --greenprogress: 151 51.7% 83.7%; /* Lightened greenprogress for dark mode */
+    --greenprogressbg: 150 100% 90%; /* Lightened greenprogressbg for dark mode */
+    --switchbg: 151 51.7% 83.7% / 10%; /* Lightened switchbg for dark mode */
+    --bglite: 214.2 11.7% 10.6%; /* Darkened bglite for dark mode */
+    --reviewYellow: 42.4 100% 80.7%; /* Lightened reviewYellow for dark mode */
+    --processingPurple: 243.8 64.5% 69.6%; /* Lightened processingPurple for dark mode */
+    --hrline: 0, 0%, 30%; /* Darkened hrline for dark mode */
+    --yellow: 42.4 100% 80.7%; /* Lightened yellow for dark mode */
+    --yellowBg: 42.4 100% 80.7% / 10%; /* Lightened yellowBg for dark mode */
+    --discordbg: 236.2 82.8% 86.1%; /* Lightened discordbg for dark mode */
+    --threeicons: 0, 0%, 40%; /* Darkened threeicons for dark mode */
+    --gray-300: 210 9% 35%;
+  }
+}
+
+
+/* Example usage for paragraphBlue */
+.paragraph {
+  color: hsl(var(--paragraphBlue));
+}
+
+/* @layer base {
+  * {
+    @apply border-border: hsl(var(--border));
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+} */
+
+@font-face {
+  font-family: 'SfUi';
+  src: url('/fonts/sf-ui-display-thin-58646e9b26e8b.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SfUi';
+  src: url('/fonts/sf-ui-display-medium-58646be638f96.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SfUi';
+  src: url('/fonts/sf-ui-display-bold-58646a511e3d9.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SfUi';
+  src: url('/fonts/sf-ui-display-semibold-58646eddcae92.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+}
